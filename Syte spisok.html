@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Spisok</title>
+	</head>
+	<body>
+		<a href="Syte Glavnay.html">Музыкальные группы</a><br>
+        <h4><a href="#">Таблица с группами</a></h4>
+		<hr>
+		<details>
+			<summary>График</summary>
+			<table>
+				<tr>
+					<td><b>Значение по оси ОХ</b></td><td align="center">Результат</td>
+				</tr>
+				<form>	
+					<tr>
+						<td><input  type="radio" name="OX" value="Year"> Год</td> <td><input type="checkbox" name="res" value="0">Максимальный рейтинг</td>
+					</tr>
+					<tr>
+						<td><input  type="radio" name="OX" value="Rating"> Группа</td><td><input type="checkbox" name="res" value="0">Минимальный рейтинг</td>
+					</tr>
+					<tr>
+						<td></td> <td><input type="checkbox" name="res" value="0">Средние продажи</td>
+					</tr>
+				</form>
+			</table>
+			<form>
+				<input type="button" value="Построить">
+			</form>
+			<p>Здесь будет график</p>
+		</details>
+		<details>
+			<summary>Фильтр</summary>
+			<form>
+			Группа:<input type:"text">
+			<p>Альбом:<input type:"text"></p>
+			<p>Год:от <input type:"number">до <input type:"number"></p>
+			<p>Рейтинг:от <input type:"text">до <input type:"text"></p>
+			<p>Длительность:от <input type:"text">до <input type:"text"></p>
+			<p>Продажи:от <input type:"text">до <input type:"text"></p>
+			<input type="button" value="Найти">
+			</form>
+		</details>
+		<details>
+			<summary>Сортировка</summary>
+			<form>
+			Первый уровень:<select>
+			<option value="0"> Группа </option>
+			<option value="1"> Альбом </option>
+			<option value="2"> Год </option>
+			<option value="3"> Рейтинг </option>
+			<option value="4"> Длительность </option>
+			<option value="5"> Продажи </option>
+			</select>
+			по убыванию? <input type="checkbox" name="check" value="0">
+			<p>Второй уровень:<select>
+			<option value="0"> Группа </option>
+			<option value="1"> Альбом </option>
+			<option value="2"> Год </option>
+			<option value="3"> Рейтинг </option>
+			<option value="4"> Длительность </option>
+			<option value="5"> Продажи </option>
+			</select>
+			по убыванию? <input type="checkbox" name="check" value="0"></p>
+			<p>Третий уровень:<select>
+			<option value="0"> Группа </option>
+			<option value="1"> Альбом </option>
+			<option value="2"> Год </option>
+			<option value="3"> Рейтинг </option>
+			<option value="4"> Длительность </option>
+			<option value="5"> Продажи </option>
+			</select>
+			по убыванию? <input type="checkbox" name="check" value="0"></p>
+			<input type="button" value="Сортировать">
+			</form>
+		</details>
+		<table border="2">
+			<tr>
+				<td>Группа</td>
+				<td>Альбом</td>
+				<td>Год</td>
+				<td>Рейтинг</td>
+				<td>Длительность</td>
+				<td>Продажи</td>
+			</tr>
+			<tr>
+				<td rowspan="5">Gorillaz</td>
+				<td>Gorillaz</td>
+				<td>2001</td>
+				<td>4,5</td>
+				<td>56:42</td>
+				<td>7,000,000</td>
+			</tr>
+			<tr>
+				<td>Demon Days</td>
+				<td>2005</td>
+				<td>4,5</td>
+				<td>50:44</td>
+				<td>8,000,000</td>
+			</tr>
+			<tr>
+				<td>Plastic Beach</td>
+				<td>2010</td>
+				<td>3,5</td>
+				<td>56:46</td>
+				<td>1,782,000</td>
+			</tr>
+			<tr>
+				<td>The Fall</td>
+				<td>2010</td>
+				<td>3</td>
+				<td>43:28</td>
+				<td>357,500</td>
+			</tr>
+			<tr>
+				<td>Humanz</td>
+				<td>2017</td>
+				<td>4,5</td>
+				<td>49:19</td>
+				<td>615,000</td>
+			</tr>
+			<tr>
+				<td rowspan="5">Rammstein</td>
+				<td>Herzeleid</td>
+				<td>1995</td>
+				<td>3</td>
+				<td>49:22</td>
+				<td>1,001,753</td>
+			</tr>
+			<tr>
+				<td>Sehnsucht</td>
+				<td>1997</td>
+				<td>4</td>
+				<td>43:51</td>
+				<td>2,102,319</td>
+			</tr>
+			<tr>
+				<td>Mutter</td>
+				<td>2001</td>
+				<td>4</td>
+				<td>45:05</td>
+				<td>1,458,350</td>
+			</tr>
+			<tr>
+				<td>Reise, Reise</td>
+				<td>2004</td>
+				<td>3</td>
+				<td>47:52</td>
+				<td>1,000,000</td>
+			</tr>
+			<tr>
+				<td>Rosenrot</td>
+				<td>2005</td>
+				<td>3</td>
+				<td>48:08</td>
+				<td>1,000,000</td>
+			</tr>
+			<tr>
+				<td rowspan="4">Daft Punk</td>
+				<td>Homework</td>
+				<td>1997</td>
+				<td>5</td>
+				<td>73:53</td>
+				<td>1,476,000</td>
+			</tr>
+			<tr>
+				<td>Discovery</td>
+				<td>2001</td>
+				<td>5</td>
+				<td>60:50</td>
+				<td>2,856,000</td>
+			</tr>
+			<tr>
+				<td>Human After All</td>
+				<td>2005</td>
+				<td>3</td>
+				<td>45:34</td>
+				<td>263,000</td>
+			</tr>
+			<tr>
+				<td>Random Access Memories</td>
+				<td>2013</td>
+				<td>5</td>
+				<td>74:24</td>
+				<td>4,123,000</td>
+			</tr>
+			<tr>
+				<td rowspan="5">Disturbed</td>
+				<td>The Sickness</td>
+				<td>2000</td>
+				<td>3</td>
+				<td>47:38</td>
+				<td>5,370,000</td>
+			</tr>
+			<tr>
+				<td>Believe</td>
+				<td>2002</td>
+				<td>4</td>
+				<td>47:16</td>
+				<td>2,277,000</td>
+			</tr>
+			<tr>
+				<td>Ten Thousand Fists</td>
+				<td>2005</td>
+				<td>4</td>
+				<td>56:22</td>
+				<td>2,385,000</td>
+			</tr>
+			<tr>
+				<td>Indestructible</td>
+				<td>2008</td>
+				<td>3,5</td>
+				<td>49:15</td>
+				<td>1,275,000</td>
+			</tr>
+			<tr>
+				<td>Asylum</td>
+				<td>2010</td>
+				<td>4</td>
+				<td>52:53</td>
+				<td>602,500</td>
+			</tr>
+			<tr>
+				<td rowspan="5">System of a Down</td>
+				<td>System of a Down</td>
+				<td>1998</td>
+				<td>4</td>
+				<td>40:36</td>
+				<td>2,525,000</td>
+			</tr>
+			<tr>
+				<td>Toxicity</td>
+				<td>2001</td>
+				<td>5</td>
+				<td>44:02</td>
+				<td>7,914,000</td>
+			</tr>
+			<tr>
+				<td>Steal This Album!</td>
+				<td>2002</td>
+				<td>4</td>
+				<td>44:36</td>
+				<td>1,340,496</td>
+			</tr>
+			<tr>
+				<td>Mezmerize</td>
+				<td>2005</td>
+				<td>4,5</td>
+				<td>36:06</td>
+				<td>3,060,000</td>
+			</tr>
+			<tr>
+				<td>Hypnotize</td>
+				<td>2005</td>
+				<td>4,5</td>
+				<td>39:40</td>
+				<td>1,466,990</td>
+			</tr>
+		</table>
+	</body>
+</html>
